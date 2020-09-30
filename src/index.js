@@ -7,6 +7,10 @@ const AlpineModal = () => {
         lastActiveElement: null,
         trapFocus: null,
         openModal(callback) {
+            if (typeof callback !== 'function') {
+                throw new TypeError('openModal requires options.callback to be a function');
+            }
+
             // Checks if [x-ref="dialog"] exists
             if (!this.$refs.dialog) return;
 
@@ -42,6 +46,10 @@ const AlpineModal = () => {
 
         },
         closeModal(callback) {
+            if (typeof callback !== 'function') {
+                throw new TypeError('openModal requires options.callback to be a function');
+            }
+
             // Callback before dialog closes.
             callback();
 
