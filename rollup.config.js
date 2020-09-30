@@ -7,7 +7,7 @@ import { terser } from "rollup-plugin-terser";
 export default {
     input: 'src/index.js',
     output: {
-        name: 'Alpine Focus Modal',
+        name: 'AlpineFocusModal',
         file: 'dist/alpinejs-focus-modal.js',
         format: 'umd',
     },
@@ -18,6 +18,5 @@ export default {
         babel({
             exclude: 'node_modules/**'
         }),
-        // terser(),
     ]
 }
