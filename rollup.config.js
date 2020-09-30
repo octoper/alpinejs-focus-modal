@@ -7,8 +7,8 @@ import { terser } from "rollup-plugin-terser";
 export default {
     input: 'src/index.js',
     output: {
-        name: 'Alpine Modal',
-        file: 'dist/alpinejs-modal.js',
+        name: 'Alpine Focus Modal',
+        file: 'dist/alpinejs-focus-modal.js',
         format: 'umd',
     },
     plugins: [

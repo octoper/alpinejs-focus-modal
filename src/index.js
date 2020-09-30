@@ -2,7 +2,7 @@ import queryFirstTabbable from 'ally.js/src/query/first-tabbable';
 import maintainTabFocus from 'ally.js/src/maintain/tab-focus';
 import whenVisibleArea from 'ally.js/src/when/visible-area';
 
-const AlpineModal = () => {
+const AlpineFocusModal = () => {
     return {
         lastActiveElement: null,
         trapFocus: null,
@@ -61,4 +61,6 @@ const AlpineModal = () => {
     };
 };
 
-export default AlpineModal;
+window.AlpineFocusModal = AlpineFocusModal;
+
+export default AlpineFocusModal;
